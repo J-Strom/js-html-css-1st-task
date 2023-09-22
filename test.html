@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Nesting Example</title>
+  <style>
+    .outer-container {
+      display: flex;
+      flex-direction: row; /* Horizontal layout */
+      justify-content: space-between; /* Space items evenly along the main axis */
+      align-items: center; /* Center items along the cross axis */
+    }
+
+    .inner-container {
+      display: flex;
+      flex-direction: column; /* Vertical layout */
+      align-items: flex-start; /* Align items to the start of the cross axis */
+    }
+
+    .item {
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer-container">
+    <div class="item">Item 1</div>
+    <div class="inner-container">
+      <div class="item">Subitem 1</div>
+      <div class="item">Subitem 2</div>
+      <div class="item">Subitem 3</div>
+    </div>
+    <div class="item">Item 2</div>
+  </div>
+</body>
+</html>

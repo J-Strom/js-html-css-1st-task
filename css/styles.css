@@ -1,0 +1,75 @@
+/*
+Author: Johan Ström
+Task: Task 1 in the HTML, CSS & Bootstrap course
+*/
+
+body {
+    color: white;
+    background-image: url("../images/universe.jpg");
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  text-shadow: 0 0 1px black;
+}
+
+/* Flex container for the main content area */
+.flexbox-column-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+.flexbox-row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Style the main content */
+.content {
+  flex: 1; /* Allow the content area to grow and fill available space */
+  padding: 20px; /* Add some padding for spacing */
+}
+
+.image {
+    margin: 20px auto;
+    width: 300px;
+    height: 400px;
+    border: 6px solid white;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+#image1 {
+  background-image: url("../images/image1.jpg");
+}
+
+.three-text-columns {
+  flex-direction: row;
+}
+
+.text-column {
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: flex-start; /* Align items to the top of the container */
+  flex: 0 1 calc(33.33% - 10px); /* Distribute container space evenly with some spacing */
+  padding: 10px; /* Add spacing between columns */
+  /* border: 1px solid #ccc; */
+}
+
+
+/* Style the footer */
+.footer {
+  position: fixed;
+  right: 3px;
+  bottom: 3px;
+  background-color: #333;
+  color: white;
+  padding: 0px 20px;
+}
