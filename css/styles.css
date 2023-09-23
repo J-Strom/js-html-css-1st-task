@@ -76,6 +76,24 @@ h1, h2, h3, h4, p {
   /* border: 1px solid #ccc; */
 }
 
+#favorite-list {
+  text-align: start;
+}
+
+.favorite1:after{
+  content: 'Hover over for my #1 favorite!';
+}
+.favorite1:hover:after{
+  content:'Cappuccino with dark roasted coffee';
+}
+
+.favorite2:after{
+  content: url("../images/black-box2.jpg");
+}
+.favorite2:hover:after{
+  content:'Cappuccino with dark roasted coffee';
+}
+
 
 /* Style the footer */
 .footer {
