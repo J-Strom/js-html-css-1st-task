@@ -64,9 +64,6 @@ h1, h2, h3, h4, p {
   background-image: url("../images/Cappuccino.jpg");
 }
 
-.three-text-columns {
-  flex-direction: row;
-}
 
 .text-column {
   justify-content: space-between; /* Distribute items evenly */
